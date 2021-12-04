@@ -1,0 +1,11 @@
+/Users/bensparks/Documents/GitHub/learning-rust/combiner/target/debug/deps/crc32fast-2b39658bb51bffd4.rmeta: /Users/bensparks/.cargo/registry/src/github.com-1ecc6299db9ec823/crc32fast-1.3.0/src/lib.rs /Users/bensparks/.cargo/registry/src/github.com-1ecc6299db9ec823/crc32fast-1.3.0/src/baseline.rs /Users/bensparks/.cargo/registry/src/github.com-1ecc6299db9ec823/crc32fast-1.3.0/src/combine.rs /Users/bensparks/.cargo/registry/src/github.com-1ecc6299db9ec823/crc32fast-1.3.0/src/specialized/mod.rs /Users/bensparks/.cargo/registry/src/github.com-1ecc6299db9ec823/crc32fast-1.3.0/src/table.rs
+
+/Users/bensparks/Documents/GitHub/learning-rust/combiner/target/debug/deps/libcrc32fast-2b39658bb51bffd4.rlib: /Users/bensparks/.cargo/registry/src/github.com-1ecc6299db9ec823/crc32fast-1.3.0/src/lib.rs /Users/bensparks/.cargo/registry/src/github.com-1ecc6299db9ec823/crc32fast-1.3.0/src/baseline.rs /Users/bensparks/.cargo/registry/src/github.com-1ecc6299db9ec823/crc32fast-1.3.0/src/combine.rs /Users/bensparks/.cargo/registry/src/github.com-1ecc6299db9ec823/crc32fast-1.3.0/src/specialized/mod.rs /Users/bensparks/.cargo/registry/src/github.com-1ecc6299db9ec823/crc32fast-1.3.0/src/table.rs
+
+/Users/bensparks/Documents/GitHub/learning-rust/combiner/target/debug/deps/crc32fast-2b39658bb51bffd4.d: /Users/bensparks/.cargo/registry/src/github.com-1ecc6299db9ec823/crc32fast-1.3.0/src/lib.rs /Users/bensparks/.cargo/registry/src/github.com-1ecc6299db9ec823/crc32fast-1.3.0/src/baseline.rs /Users/bensparks/.cargo/registry/src/github.com-1ecc6299db9ec823/crc32fast-1.3.0/src/combine.rs /Users/bensparks/.cargo/registry/src/github.com-1ecc6299db9ec823/crc32fast-1.3.0/src/specialized/mod.rs /Users/bensparks/.cargo/registry/src/github.com-1ecc6299db9ec823/crc32fast-1.3.0/src/table.rs
+
+/Users/bensparks/.cargo/registry/src/github.com-1ecc6299db9ec823/crc32fast-1.3.0/src/lib.rs:
+/Users/bensparks/.cargo/registry/src/github.com-1ecc6299db9ec823/crc32fast-1.3.0/src/baseline.rs:
+/Users/bensparks/.cargo/registry/src/github.com-1ecc6299db9ec823/crc32fast-1.3.0/src/combine.rs:
+/Users/bensparks/.cargo/registry/src/github.com-1ecc6299db9ec823/crc32fast-1.3.0/src/specialized/mod.rs:
+/Users/bensparks/.cargo/registry/src/github.com-1ecc6299db9ec823/crc32fast-1.3.0/src/table.rs:
