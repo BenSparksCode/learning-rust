@@ -12,7 +12,7 @@ fn main() {
 
     let result = operate(operator, first_num, second_num);
 
-    println!("{:?} {} {} = {}", first, operator, second, result);
+    println!("{:?}", output(first_num, operator, second_num, result));
 }
 
 fn operate(operator: char, first_num: f32, second_num: f32) -> f32 {
@@ -27,4 +27,8 @@ fn operate(operator: char, first_num: f32, second_num: f32) -> f32 {
     } else {
         0.0
     }
+}
+
+fn output(first_num: f32, operator: char, second_num: f32, result: f32) -> String {
+    return format!("{} {} {} = {}", first_num, operator, second_num, result);
 }
