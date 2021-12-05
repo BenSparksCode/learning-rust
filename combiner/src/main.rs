@@ -3,11 +3,33 @@ use args::Args;
 use image::{ io::Reader, DynamicImage, ImageFormat, imageops::FilterType::Triangle, GenericImageView };
 use std::{
     fs::File,
-    io::BufReader
+    io::BufReader,
 };
+use std::convert::TryInto;
 
+#[derive(Debug)]
 enum ImageDataErrors {
     DifferentImageFormats,
+}
+
+struct FloatingImage {
+    width: u32,
+    height: u32,
+    data: Vec<u8>,
+    name: String,
+}
+
+impl FloatingImage {
+    fn new(width: u32, height: u32, name: String) -> FloatingImage {
+        let buffer_capacity = height * width * 4;
+        let buffer = Vec::with_capacity(buffer_capacity.try_into().unwrap());
+        FloatingImage {
+            width,
+            height,
+            data: buffer,
+            name
+        }
+    }
 }
 
 fn main() -> Result<(), ImageDataErrors>{
@@ -20,6 +42,8 @@ fn main() -> Result<(), ImageDataErrors>{
     }
 
     let (image_1, image_2) = standardize_size(image_1, image_2);
+
+    let output = FloatingImage::new(image_1.width(), image_2.height(), args.output);
 
     Ok(())
 }
@@ -44,8 +68,8 @@ fn standardize_size(image_1: DynamicImage, image_2: DynamicImage) -> (DynamicIma
     println!("width {} height {}\n", width, height);
 
     if image_2.dimensions() == (width, height) {
-        (image_1.resize_exact(width, height, Triangle), image_2);
+        return (image_1.resize_exact(width, height, Triangle), image_2);
     } else {
-        (image_1, image_2.resize_exact(width, height, Triangle));
+        return (image_1, image_2.resize_exact(width, height, Triangle));
     }
 }
